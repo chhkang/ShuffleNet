@@ -23,7 +23,7 @@ def main():
         raise Exception('No GPU found, please run without --cuda')
 
     print('\n=> Build ShuffleNet..')
-    model = ShuffleNet_CIFAR(2,1.0,100)
+    model = ShuffleNet_CIFAR()
     print(model)
 
     from thop import profile

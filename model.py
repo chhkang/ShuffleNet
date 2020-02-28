@@ -288,7 +288,7 @@ class ShuffleNet_CIFAR(nn.Module):
     """ShuffleNet implementation for CIFAR-10/100.
     """
 
-    def __init__(self, groups=3, in_channels=3, width_mult=1.0, num_classes=1000):
+    def __init__(self, groups=8, in_channels=3, width_mult=1.0, num_classes=100):
         """ShuffleNet constructor.
         Arguments:
             groups (int, optional): number of groups to be used in grouped
